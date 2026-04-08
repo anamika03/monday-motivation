@@ -10,7 +10,7 @@ MY_PASSWORD = os.environ.get("MY_PASSWORD")
 now = dt.datetime.now()
 weekday = now.weekday()
 if weekday == 2:  # Thursday is represented by 3
-    with open("/Users/anamika/Documents/100_Days_of_Python/100-Days-Of-Python/Day 32/quotes.txt") as quote_file:
+    with open("qoutes.txt") as quote_file:
         all_quotes = quote_file.readlines()
         quote = random.choice(all_quotes)
 

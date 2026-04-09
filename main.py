@@ -9,7 +9,7 @@ MY_PASSWORD = os.environ.get("MY_PASSWORD")
 
 now = dt.datetime.now()
 weekday = now.weekday()
-if weekday == 2:  # Thursday is represented by 3
+if weekday == 4:  # Thursday is represented by 3
     with open("qoutes.txt") as quote_file:
         all_quotes = quote_file.readlines()
         quote = random.choice(all_quotes)
